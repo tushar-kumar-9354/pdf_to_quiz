@@ -1,0 +1,61 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+env/
+.venv/
+venv/
+ENV/
+.ENV/
+env.bak/
+venv.bak/
+
+# Environment Variable Files
+.env
+.env.*
+
+# Streamlit config
+.streamlit/config.toml
+
+# macOS Files
+.DS_Store
+
+# Windows Files
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
+
+# Unit test / coverage reports
+.junit/
