@@ -27,7 +27,7 @@ def generate_mcq_questions_and_answers_from_pdf(pdf_file_path, difficulty_level,
     {pdf_text[:5000]}
 
     Format:
-    Q1. <Question text>
+    <Question text>
     A) <Option 1>
     B) <Option 2>
     C) <Option 3>
@@ -35,8 +35,9 @@ def generate_mcq_questions_and_answers_from_pdf(pdf_file_path, difficulty_level,
     Answer: <A/B/C/D>
     """
 
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
+    print("Response from Gemini:", response.text)
 
     questions, options, answers = [], [], []
 
