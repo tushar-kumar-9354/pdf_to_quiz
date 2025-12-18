@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # Load API Key
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY",'AIzaSyBiYXLVIDsFpTyMQVRx0E9Eir1SNhJ3un8'))
 
 # Extract text from PDF using PyPDF2
 def extract_text_from_pdf(pdf_file_path):
